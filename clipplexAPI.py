@@ -159,7 +159,7 @@ class Video:
             .output(f"{MEDIA_STATIC_PATH}/videos/{self.file_name}.mp4", 
                     map_metadata=-1, 
                     vcodec="libx264", 
-                    acodec="libvorbis", 
+                    acodec="aac", 
                     pix_fmt="yuv420p", 
                     crf=18, 
                     **{"metadata:g:0":f"title={self.metadata_title}", 
